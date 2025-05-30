@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Importância do Campo para a Cidade</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>A Importância do Campo para a Cidade</h1>
+    <nav>
+      <a href="#alimentos">Alimentos</a>
+      <a href="#materias">Matérias-primas</a>
+      <a href="#historias">Histórias</a>
+      <a href="#valorizar">Valorizar</a>
+      <a href="#contato">Contato</a>
+    </nav>
+  </header>
+
+  <section class="banner">
+    <h2>Do campo nasce a vida que alimenta a cidade.</h2>
+  </section>
+
+  <section id="alimentos">
+    <h2>Alimentos que Vêm do Campo</h2>
+    <p>O campo fornece alimentos essenciais para a cidade: frutas, verduras, legumes, grãos e carnes. Sem o campo, a mesa urbana ficaria vazia.</p>
+  </section>
+
+  <section id="materias">
+    <h2>Matérias-primas Essenciais</h2>
+    <p>Além de alimentos, o campo produz algodão para roupas, madeira para móveis, e plantas medicinais para remédios. A cidade depende do campo para o seu desenvolvimento.</p>
+  </section>
+
+  <section id="historias">
+    <h2>Histórias Inspiradoras</h2>
+    <p>Conheça agricultores que, com dedicação, garantem a alimentação das cidades e preservam o meio ambiente com práticas sustentáveis.</p>
+  </section>
+
+  <section id="valorizar">
+    <h2>Como Valorizar o Campo</h2>
+    <ul>
+      <li>Consumir produtos locais.</li>
+      <li>Apoiar a agricultura familiar.</li>
+      <li>Valorizar as feiras e mercados rurais.</li>
+      <li>Preservar os recursos naturais.</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Deixe sua Mensagem</h2>
+    <form>
+      <input type="text" placeholder="Seu nome" required>
+      <input type="email" placeholder="Seu e-mail" required>
+      <textarea placeholder="Sua mensagem" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 - A Importância do Campo para a Cidade</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>document.querySelector('form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Obrigado pela sua mensagem!');
+});
