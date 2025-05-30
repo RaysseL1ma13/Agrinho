@@ -2,69 +2,50 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>A Importância do Campo para a Cidade</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1>A Importância do Campo para a Cidade</h1>
-    <nav>
-      <a href="#alimentos">Alimentos</a>
-      <a href="#materias">Matérias-primas</a>
-      <a href="#historias">Histórias</a>
-      <a href="#valorizar">Valorizar</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </header>
+<header>
+  <h1>Festejando a Conexão Campo-Cidade</h1>
+  <nav>
+    <a href="#alimentos">Alimentos</a>
+    <a href="#materias">Matérias-primas</a>
+    <a href="#historias">Histórias</a>
+    <a href="#valorizar">Valorizar</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
 
-  <section class="banner">
-    <h2>Do campo nasce a vida que alimenta a cidade.</h2>
-  </section>
+<button id="darkModeToggle">🌙 Alternar Modo</button>
 
-  <section id="alimentos">
-    <h2>Alimentos que Vêm do Campo</h2>
-    <p>O campo fornece alimentos essenciais para a cidade: frutas, verduras, legumes, grãos e carnes. Sem o campo, a mesa urbana ficaria vazia.</p>
-  </section>
+<audio id="bg-music" loop>
+  <source src="https://cdn.pixabay.com/download/audio/2022/05/16/audio_7e30588e8b.mp3" type="audio/mpeg">
+  Seu navegador não suporta áudio.
+</audio>
+<button id="playMusic">▶️ Música</button>
 
-  <section id="materias">
-    <h2>Matérias-primas Essenciais</h2>
-    <p>Além de alimentos, o campo produz algodão para roupas, madeira para móveis, e plantas medicinais para remédios. A cidade depende do campo para o seu desenvolvimento.</p>
-  </section>
+<button id="toTop">🔝</button>
 
-  <section id="historias">
-    <h2>Histórias Inspiradoras</h2>
-    <p>Conheça agricultores que, com dedicação, garantem a alimentação das cidades e preservam o meio ambiente com práticas sustentáveis.</p>
-  </section>
+<div class="banner">
+  <h2>O Campo Alimenta a Cidade</h2>
+</div>
 
-  <section id="valorizar">
-    <h2>Como Valorizar o Campo</h2>
-    <ul>
-      <li>Consumir produtos locais.</li>
-      <li>Apoiar a agricultura familiar.</li>
-      <li>Valorizar as feiras e mercados rurais.</li>
-      <li>Preservar os recursos naturais.</li>
-    </ul>
-  </section>
+<section id="alimentos">
+  <h2>Alimentos que Vêm do Campo</h2>
+  <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Plantação" class="imagem">
+  <p>O campo fornece alimentos essenciais para a cidade: frutas, verduras, legumes, grãos e carnes.</p>
+</section>
 
-  <section id="contato">
-    <h2>Deixe sua Mensagem</h2>
-    <form>
-      <input type="text" placeholder="Seu nome" required>
-      <input type="email" placeholder="Seu e-mail" required>
-      <textarea placeholder="Sua mensagem" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
-  </section>
+<section id="materias">
+  <h2>Matérias-primas Essenciais</h2>
+  <img src="https://images.unsplash.com/photo-1598620617414-2b6e4b47e659" alt="Algodão" class="imagem">
+  <p>Além de alimentos, o campo produz algodão para roupas, madeira para móveis, e plantas medicinais para remédios.</p>
+</section>
 
-  <footer>
-    <p>© 2025 - A Importância do Campo para a Cidade</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
-</html>document.querySelector('form').addEventListener('submit', function(e) {
-  e.preventDefault();
-  alert('Obrigado pela sua mensagem!');
-});
+<section id="historias">
+  <h2>Histórias Inspiradoras</h2>
+  <img src="https://images.unsplash.com/photo-1578898886421-32c17ac57041" alt="Agricultor"
