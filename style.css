@@ -1,162 +1,65 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  color: #333;
-  line-height: 1.6;
-  transition: background 0.5s, color 0.5s;
+  margin: 0; padding: 0;
+  background: #fafafa; color: #333;
+  transition: 0.5s;
 }
 
 header {
-  background: #4CAF50;
-  color: white;
-  padding: 20px 0;
-  text-align: center;
-  animation: slideDown 1s ease;
+  background: #4CAF50; color: white;
+  padding: 20px; text-align: center;
 }
 
 nav a {
-  margin: 0 10px;
-  color: white;
-  text-decoration: none;
+  margin: 0 10px; color: white; text-decoration: none;
 }
 
 nav a:hover {
   text-decoration: underline;
 }
 
-.banner {
-  background: url('https://source.unsplash.com/1200x400/?farm') no-repeat center;
-  background-size: cover;
-  padding: 80px 20px;
-  text-align: center;
-  color: white;
-}
-
 section {
-  padding: 50px 20px;
-  max-width: 900px;
-  margin: auto;
+  padding: 40px; text-align: center;
+  animation: fadeIn 1s ease;
 }
 
-h2 {
-  margin-bottom: 20px;
-  color: #4CAF50;
-}
-
-.imagem {
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 20px auto;
+img {
+  width: 100%; max-width: 400px;
   border-radius: 10px;
+  transition: transform 0.3s;
+  margin-top: 20px;
 }
 
-ul {
-  list-style: disc;
-  margin-left: 20px;
+img:hover {
+  transform: scale(1.05);
 }
 
-.galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 10px;
-}
-
-.galeria img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.slider {
-  max-width: 600px;
-  margin: 30px auto;
-  overflow: hidden;
-  border-radius: 10px;
-}
-
-.slides {
-  display: flex;
-  width: 300%;
-  animation: slide 9s infinite;
-}
-
-.slides img {
-  width: 100%;
-}
-
-@keyframes slide {
-  0% { transform: translateX(0); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-  border: 1px solid #ccc;
-}
-
-form button {
-  background: #4CAF50;
-  color: white;
-  padding: 10px 20px;
-  border: none;
+button {
+  margin: 5px; padding: 10px;
+  border-radius: 5px; border: none;
   cursor: pointer;
-  border-radius: 5px;
-}
-
-form button:hover {
-  background: #45a049;
 }
 
 footer {
-  background: #333;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
+  background: #333; color: white;
+  text-align: center; padding: 15px;
 }
 
-#darkModeToggle, #playMusic, #toTop {
-  position: fixed;
-  right: 20px;
-  padding: 10px;
-  border-radius: 50%;
-  border: none;
-  cursor: pointer;
-  background: #4CAF50;
-  color: white;
-  font-size: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  transition: transform 0.3s ease;
-  z-index: 1000;
+.dark {
+  background: #121212; color: #f4f4f4;
 }
 
-#darkModeToggle { top: 20px; }
-#playMusic { top: 80px; }
-#toTop { bottom: 20px; display: none; }
-
-#darkModeToggle:hover, #playMusic:hover, #toTop:hover {
-  transform: scale(1.2);
+.dark header {
+  background: #222;
 }
 
-.dark-mode {
-  background: #121212;
-  color: #f4f4f4;
+input, textarea {
+  margin: 10px 0; padding: 10px;
+  width: 80%; max-width: 400px;
+  border: 1px solid #ccc; border-radius: 5px;
 }
 
-.dark-mode header {
-  background: #333;
-}
-
-.dark-mode nav a {
-  color: #ffeb3b;
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
