@@ -2,102 +2,126 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>A Importância do Campo para a Cidade</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Festejando a Conexão Campo-Cidade</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #fafafa; color: #333;
+      transition: 0.5s;
+    }
+    header {
+      background: #4CAF50; color: white;
+      padding: 20px; text-align: center;
+    }
+    nav a {
+      margin: 0 10px; color: white; text-decoration: none;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px; text-align: center;
+      animation: fadeIn 1s ease;
+    }
+    img {
+      width: 100%; max-width: 400px;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      margin-top: 20px;
+    }
+    img:hover {
+      transform: scale(1.05);
+    }
+    button {
+      margin: 5px; padding: 10px;
+      border-radius: 5px; border: none;
+    }
+    footer {
+      background: #333; color: white;
+      text-align: center; padding: 15px;
+    }
+    .dark {
+      background: #121212; color: #f4f4f4;
+    }
+    .dark header {
+      background: #222;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
 <header>
-  <h1>Festejando a Conexão Campo-Cidade</h1>
+  <h1>🌾 Festejando a Conexão Campo-Cidade 🌆</h1>
   <nav>
     <a href="#alimentos">Alimentos</a>
-    <a href="#materias">Matérias-primas</a>
-    <a href="#historias">Histórias</a>
-    <a href="#valorizar">Valorizar</a>
-    <a href="#galeria">Galeria</a>
+    <a href="#cultura">Cultura</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
     <a href="#contato">Contato</a>
   </nav>
+  <button id="darkMode">🌓</button>
+  <button id="playMusic">🎵</button>
 </header>
 
-<button id="darkModeToggle">🌙 Alternar Modo</button>
-
-<audio id="bg-music" loop>
+<audio id="music" loop>
   <source src="https://cdn.pixabay.com/audio/2023/07/19/audio_f82ef08cd1.mp3" type="audio/mpeg">
-  Seu navegador não suporta áudio.
 </audio>
-<button id="playMusic">▶️ Música</button>
-
-<button id="toTop">🔝</button>
-
-<div class="banner">
-  <h2>O Campo Alimenta a Cidade</h2>
-</div>
 
 <section id="alimentos">
-  <h2>Alimentos que Vêm do Campo</h2>
-  <img src="https://source.unsplash.com/600x400/?farm,food" alt="Plantação" class="imagem">
-  <p>O campo fornece alimentos essenciais para a cidade: frutas, verduras, legumes, grãos e carnes.</p>
+  <h2>🍎 Alimentos do Campo</h2>
+  <p>Frutas, legumes e grãos produzidos no campo garantem a alimentação nas cidades.</p>
+  <img src="https://source.unsplash.com/400x300/?farm,food" alt="Alimentos do campo">
 </section>
 
-<section id="materias">
-  <h2>Matérias-primas Essenciais</h2>
-  <img src="https://source.unsplash.com/600x400/?cotton,plantation" alt="Algodão" class="imagem">
-  <p>Além de alimentos, o campo produz algodão para roupas, madeira para móveis, e plantas medicinais para remédios.</p>
+<section id="cultura">
+  <h2>🎉 Cultura e Festas</h2>
+  <p>As festas do campo aproximam a cidade, preservando tradições e promovendo união.</p>
+  <img src="https://source.unsplash.com/400x300/?festival,farm" alt="Festas do campo">
 </section>
 
-<section id="historias">
-  <h2>Histórias Inspiradoras</h2>
-  <img src="https://source.unsplash.com/600x400/?farmer,agriculture" alt="Agricultor" class="imagem">
-  <p>Conheça agricultores que garantem a alimentação das cidades e preservam o meio ambiente com práticas sustentáveis.</p>
-</section>
-
-<section id="valorizar">
-  <h2>Como Valorizar o Campo</h2>
-  <img src="https://source.unsplash.com/600x400/?market,farmers" alt="Feira" class="imagem">
-  <ul>
-    <li>Consumir produtos locais.</li>
-    <li>Apoiar a agricultura familiar.</li>
-    <li>Valorizar as feiras e mercados rurais.</li>
-    <li>Preservar os recursos naturais.</li>
-  </ul>
-</section>
-
-<section id="galeria">
-  <h2>Galeria de Fotos</h2>
-  <div class="galeria">
-    <img src="https://source.unsplash.com/200x200/?tractor" alt="Foto 1">
-    <img src="https://source.unsplash.com/200x200/?cows" alt="Foto 2">
-    <img src="https://source.unsplash.com/200x200/?wheat" alt="Foto 3">
-    <img src="https://source.unsplash.com/200x200/?farm" alt="Foto 4">
-  </div>
-</section>
-
-<section id="carrossel">
-  <h2>Carrossel de Imagens</h2>
-  <div class="slider">
-    <div class="slides">
-      <img src="https://source.unsplash.com/600x400/?barn" alt="Slide 1">
-      <img src="https://source.unsplash.com/600x400/?field" alt="Slide 2">
-      <img src="https://source.unsplash.com/600x400/?harvest" alt="Slide 3">
-    </div>
-  </div>
+<section id="sustentabilidade">
+  <h2>🌱 Sustentabilidade</h2>
+  <p>Práticas sustentáveis no campo preservam o meio ambiente e garantem o futuro.</p>
+  <img src="https://source.unsplash.com/400x300/?sustainability,farm" alt="Sustentabilidade">
 </section>
 
 <section id="contato">
-  <h2>Entre em Contato</h2>
-  <form>
-    <input type="text" placeholder="Seu nome" required>
-    <input type="email" placeholder="Seu email" required>
-    <textarea placeholder="Sua mensagem" required></textarea>
+  <h2>📞 Contato</h2>
+  <form onsubmit="event.preventDefault(); alert('Mensagem enviada com sucesso!');">
+    <input type="text" placeholder="Seu nome" required><br>
+    <input type="email" placeholder="Seu email" required><br>
+    <textarea placeholder="Sua mensagem" required></textarea><br>
     <button type="submit">Enviar</button>
   </form>
 </section>
 
 <footer>
-  <p>&copy; 2025 - Festejando a Conexão Campo-Cidade</p>
+  <p>&copy; 2025 - Conexão Campo-Cidade</p>
 </footer>
 
-<script src="script.js"></script>
+<script>
+  const darkBtn = document.getElementById('darkMode');
+  const playBtn = document.getElementById('playMusic');
+  const music = document.getElementById('music');
+
+  darkBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark');
+  });
+
+  playBtn.addEventListener('click', () => {
+    if (music.paused) {
+      music.play();
+      playBtn.textContent = '⏸️';
+    } else {
+      music.pause();
+      playBtn.textContent = '🎵';
+    }
+  });
+</script>
+
 </body>
 </html>
